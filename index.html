@@ -129,7 +129,7 @@
                                 <img src="https://media.giphy.com/media/m85llaN7ZkFIHtURiC/giphy.gif" alt="" width="220">
                             </div>
                             <div class="text__letter">
-                                 <p></p>
+                                <div id="scrollable-letter"></div>
                             </div>
                             <img id="mewmew" width="80" src="./images/mewmew.gif" alt="">
                         </div>
@@ -158,7 +158,7 @@
     let currentIndexLetter = 0;
     let currentIndexTitle = 0;
     let date__of__birth = document.querySelector(".date__of__birth span");
-    let text__letter = document.querySelector(".text__letter p");
+    let text__letter = document.getElementById("scrollable-letter");
     setTimeout(function(){
         timeDatetxt = setInterval(function(){
             if(currentIndex < charArrDate.length){
